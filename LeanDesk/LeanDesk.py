@@ -1,11 +1,10 @@
 import os 
 import shutil
 class leandesk:
-    def changing_path(self, UserName):
+    def cleaning_dir(self, UserName):
         downloads_path = os.path.join('C:\\', 'Users', f'{UserName}', 'Downloads')
         os.chdir(downloads_path)
         li = os.listdir()
-        # print(os.getcwd())
 
         pdf_directory = os.path.join(downloads_path, 'PDF files')
         os.makedirs(pdf_directory, exist_ok=True)
@@ -153,9 +152,8 @@ class leandesk:
                 source_path_webp = os.path.join(downloads_path,i)
                 destination_path_webp = os.path.join(webp_dir,i)
                 shutil.move(source_path_webp,destination_path_webp)
-        print(os.listdir())
+   
 
-        # print(type(li))
 
 
 
