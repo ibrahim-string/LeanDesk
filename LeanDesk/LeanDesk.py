@@ -159,7 +159,3 @@ class leandesk:
 
 
 
-a = leandesk()
-b = a.changing_path(UserName='strin')
-# print(b)
-# print(os.getcwd())
