@@ -1,0 +1,12 @@
+README.md
+licence.md
+setup.cfg
+setup.py
+LeanDesk/LeanDesk.py
+LeanDesk/__init__.py
+LeanDesk/cli.py
+leandesk.egg-info/PKG-INFO
+leandesk.egg-info/SOURCES.txt
+leandesk.egg-info/dependency_links.txt
+leandesk.egg-info/entry_points.txt
+leandesk.egg-info/top_level.txt

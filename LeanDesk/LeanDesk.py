@@ -17,7 +17,7 @@ class LeanDesk:
                 shutil.move(source_path, destination_path)
 
 
-        py_dir = os.path.join(downloads_path,i)
+        py_dir = os.path.join(downloads_path,"Python files")
         os.makedirs(py_dir,exist_ok=True)
         for i in li: 
             if ".py" in i: 
