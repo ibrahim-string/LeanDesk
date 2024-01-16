@@ -1,2 +1,0 @@
-[console_scripts]
-clean = LeanDesk.cli:main
