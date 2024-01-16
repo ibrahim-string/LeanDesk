@@ -1,6 +1,6 @@
 # cli.py
 import argparse
-from LeanDesk.LeanDesk import leandesk
+from LeanDesk.LeanDesk import LeanDesk
 
 def main():
     parser = argparse.ArgumentParser(description='Clean a directory.')
@@ -8,8 +8,8 @@ def main():
     
     args = parser.parse_args()
     
-
-    leandesk.cleaning_dir(args.directory_path)
+    cleaning = LeanDesk()
+    cleaning.cleaning_dir(path=args.directory_path)
     print(f'Directory {args.directory_path} cleaned successfully.')
 
 if __name__ == '__main__':

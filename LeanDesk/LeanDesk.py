@@ -1,8 +1,9 @@
 import os 
 import shutil
-class leandesk:
-    def cleaning_dir(self, UserName):
-        downloads_path = os.path.join('C:\\', 'Users', f'{UserName}', 'Downloads')
+class LeanDesk:
+    def cleaning_dir(self, path):
+        # downloads_path = os.path.join('C:\\', 'Users', f'{UserName}', 'Downloads')
+        downloads_path = os.path.join(path)
         os.chdir(downloads_path)
         li = os.listdir()
 
@@ -10,14 +11,21 @@ class leandesk:
         os.makedirs(pdf_directory, exist_ok=True)
         for i in li:
             if '.pdf' in i:
-                # Move the PDF file into the 'PDF files' directory
+              
                 source_path = os.path.join(downloads_path, i)
                 destination_path = os.path.join(pdf_directory, i)
                 shutil.move(source_path, destination_path)
-                print(destination_path, 'pdf files')
 
 
+        py_dir = os.path.join(downloads_path,i)
+        os.makedirs(py_dir,exist_ok=True)
+        for i in li: 
+            if ".py" in i: 
+                source_path_py = os.path.join(downloads_path,i)
+                destination_path_py = os.path.join(py_dir,i)
+                shutil.move(source_path_py,destination_path_py)
 
+                
         docx_directory = os.path.join(downloads_path,' documents files')
         os.makedirs(docx_directory,exist_ok=True)
         for i in os.listdir():

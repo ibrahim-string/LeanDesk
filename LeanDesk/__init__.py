@@ -1,1 +1,1 @@
-from LeanDesk import LeanDesk
+from LeanDesk.LeanDesk import LeanDesk
