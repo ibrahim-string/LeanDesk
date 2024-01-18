@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='leandesk',
-    version='1.9.4',
+    version='1.9.5',
     packages=find_packages(),
     install_requires=[
       

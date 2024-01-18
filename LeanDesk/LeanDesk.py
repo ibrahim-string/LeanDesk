@@ -2,8 +2,7 @@ import os
 import shutil
 class LeanDesk:
     def cleaning_dir(self, path):
-        # downloads_path = os.path.join('C:\\', 'Users', f'{UserName}', 'Downloads')
-        downloads_path = os.path.join(path)
+        downloads_path = os.path.join(str(path))
         os.chdir(downloads_path)
         li = os.listdir()
 
